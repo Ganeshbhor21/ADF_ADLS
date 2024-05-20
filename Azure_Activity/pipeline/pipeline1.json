@@ -1,0 +1,30 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Pip1_parameters",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"prsn_name": "kajol",
+						"prsn_location": "hyd"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-05-19T13:58:30Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "DS_SwitchActivity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_gen2lake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "secfolder"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

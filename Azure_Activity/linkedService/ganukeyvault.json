@@ -1,0 +1,11 @@
+{
+	"name": "ganukeyvault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://ganu.vault.azure.net/"
+		}
+	}
+}

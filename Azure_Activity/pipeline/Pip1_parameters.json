@@ -1,0 +1,40 @@
+{
+	"name": "Pip1_parameters",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "message",
+					"value": {
+						"value": "@concat('person name is ',pipeline().parameters.prsn_name,' and person location is ',pipeline().parameters.prsn_location)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"prsn_name": {
+				"type": "string"
+			},
+			"prsn_location": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"message": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-05-19T13:53:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
